@@ -1,0 +1,15 @@
+{
+  "name": "react-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodetest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doSomething": "echo \"Won't someone think of the children!\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "semver": "^7.1.3"
+  }
+}
