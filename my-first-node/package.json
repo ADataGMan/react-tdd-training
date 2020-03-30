@@ -4,8 +4,10 @@
   "description": "",
   "main": ".\\src\\app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "doSomething": "echo \"Won't someone think of the children!\""
+    "test": "echo all tests passed && exit 0",
+    "think": "echo \"Won't someone please think of the children!\" && exit 0",
+    "build": "echo BUILD OK && exit 0",
+    "prebuild": "npm run test"
   },
   "author": "",
   "license": "ISC",
