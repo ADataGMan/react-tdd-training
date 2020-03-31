@@ -10,4 +10,4 @@ If stuck in VIM, have some hints. <https://devhints.io/vim>
 
 ## To Run
 
-### NPM RUN BUILD
+NPM RUN BUILD
