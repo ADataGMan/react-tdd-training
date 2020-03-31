@@ -7,15 +7,15 @@
   },
   "main": ".\\src\\app.js",
   "scripts": {
+    "build": "echo BUILD OK && exit 0",
     "bundle": "webpack",
     "lint": "eslint . --ext .js",
     "lintfix": "eslint . --ext .js --fix",
+    "prebuild": "npm run versioncheck && npm run lint && npm run test && npm run bundle",
+    "start": "http-server dist",
     "test": "karma start --singleRun",
     "think": "echo \"Won't someone please think of the children!\" && exit 0",
-    "build": "echo BUILD OK && exit 0",
-    "prebuild": "npm run lint && npm run versioncheck && npm run test",
-    "versioncheck": "node version-check.js",
-    "start": "http-server dist"
+    "versioncheck": "node version-check.js"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +30,7 @@
     "karma-chrome-launcher": "^3.1.0",
     "karma-commonjs": "^1.0.0",
     "karma-jasmine": "^3.1.1",
+    "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
     "semver": "^7.1.3",
     "webpack": "^4.42.1",

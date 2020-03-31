@@ -18,5 +18,8 @@ module.exports = {
       mainDiv: 'welcome-message',
       template: 'src/index.html'
     })
-  ]
+  ],
+  watch: false,
+  watchOptions: {
+  }
 };
