@@ -1,7 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SayHello from './SayHello';
+
+
 
 ReactDOM.render(
-  <h1>Hello World!</h1>,
+  <SayHello name="World" />,
   document.getElementById('app')
 );

@@ -25,8 +25,22 @@ module.exports = {
         "react"
     ],
     "rules": {
-        // "no-console": [
-        //     "warn"
-        // ]
+        "linebreak-style": [
+            "off"
+        ],
+        "no-console": [
+            "warn"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        // "quotes": [
+        //     "warn",
+        //     "single"
+        // ],
+        "react/jsx-uses-react": 1,
+        "react/jsx-uses-vars": 1,
+        "react/react-in-jsx-scope": 1
     }
 };
