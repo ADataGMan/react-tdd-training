@@ -1,3 +1,3 @@
-exports.greet = function greet(name = "Friend") {
+export let greet = (name = "Friend") => {
   return 'Hello, ' + name;
 }

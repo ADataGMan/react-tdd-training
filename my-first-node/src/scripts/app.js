@@ -1,7 +1,7 @@
-var sayHello = require('./sayHello.js');
-window.addEventListener('load', function () {
-  document.getElementById('welcome-message')
-    .innerHTML = sayHello.greet();
-});
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-console.log("Fancy meeting you here");
+ReactDOM.render(
+  <h1>Hello World!</h1>,
+  document.getElementById('app')
+);

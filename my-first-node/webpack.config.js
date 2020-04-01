@@ -6,6 +6,15 @@ module.exports = {
   devtool: 'source-map',
   mode: 'development',
   entry: './src/scripts/app.js',
+  module: {
+    rules: [{
+      test: /.js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader'
+      }
+    }]
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'scripts/app.js'

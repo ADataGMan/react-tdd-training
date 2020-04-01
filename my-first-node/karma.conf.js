@@ -32,6 +32,17 @@ module.exports = function (config) {
     },
 
     webpack: {
+      mode: 'development',
+      entry: './src/scripts/app.js',
+      module: {
+        rules: [{
+          test: /.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader'
+          }
+        }]
+      }
     },
 
     // test results reporter to use
