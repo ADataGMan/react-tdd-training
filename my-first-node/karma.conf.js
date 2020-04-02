@@ -15,16 +15,13 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      // 'spec/**/*.js'
-      'spec/tests.webpack.js'
+      'spec/**/*.js'
+      // 'spec/tests.webpack.js' //Does not work
     ],
 
-
-    // list of files / patterns to exclude
     exclude: [
     ],
 
-    // plugins
     plugins: [
       'karma-webpack',
       'karma-jasmine',
@@ -35,8 +32,8 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      // 'spec/**/*Spec.js': ['webpack'],
-      'spec/tests.webpack.js': ['webpack'],
+      'spec/**/*Spec.js': ['webpack'],
+      // 'spec/tests.webpack.js': ['webpack'], //Does not work
       'src/**/*.js': ['webpack']
     },
 
@@ -63,12 +60,8 @@ module.exports = function (config) {
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['dots'],
 
-
-    // web server port
     port: 9876,
 
-
-    // enable / disable colors in the output (reporters and logs)
     colors: true,
 
 
