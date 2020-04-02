@@ -11,4 +11,8 @@ SayHello.propTypes = {
   name: PropTypes.string
 };
 
+SayHello.defaultProps = {
+  name: "Friend!"
+};
+
 export default SayHello;
