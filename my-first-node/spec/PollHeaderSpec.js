@@ -7,7 +7,7 @@ describe('PollHeader', function () {
   beforeEach(function () {
     component = TestUtils.renderIntoDocument(
       <PollHeader text="Welcome to the Poll!" />
-    )
+    );
   });
   it('renders without problems', () => {
     expect(component).toEqual(jasmine.anything());
