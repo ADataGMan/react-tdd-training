@@ -15,6 +15,10 @@ module.exports = {
       }
     }]
   },
+  // node: {
+  //   __dirname: true,
+  //   __filename: true
+  // },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'scripts/app.js'

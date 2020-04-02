@@ -15,6 +15,7 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
+      // 'spec/**/*.js'
       'spec/tests.webpack.js'
     ],
 
@@ -23,6 +24,13 @@ module.exports = function (config) {
     exclude: [
     ],
 
+    // plugins
+    plugins: [
+      'karma-webpack',
+      'karma-jasmine',
+      'karma-sourcemap-loader',
+      'karma-chrome-launcher'
+    ],
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
@@ -43,6 +51,10 @@ module.exports = function (config) {
             loader: 'babel-loader'
           }
         }]
+      },
+      node: {
+        __dirname: true,
+        __filename: true
       }
     },
 
