@@ -41,13 +41,18 @@ module.exports = function (config) {
       mode: 'development',
       entry: './src/scripts/app.js',
       module: {
-        rules: [{
-          test: /.js$/,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader'
-          }
-        }]
+        rules: [
+          {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],
+          },
+          {
+            test: /.js$/,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader'
+            }
+          }]
       },
       node: {
         __dirname: true,

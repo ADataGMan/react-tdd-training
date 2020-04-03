@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class PollAnswer extends React.Component {
   render() {
     return (
-      <div>
+      <div className="Radio">
         <label><input type="radio" /> <span>{this.props.text}</span></label>
       </div>
     );

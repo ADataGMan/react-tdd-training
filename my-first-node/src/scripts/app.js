@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PollContainer from '../containers/PollContainer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+import PollContainer from '../containers/PollContainer';
 
 
 ReactDOM.render(
