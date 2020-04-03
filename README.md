@@ -12,6 +12,8 @@ VIM hints (May arise with git command line) <https://devhints.io/vim>
 
 Main working directory of the labs.
 
+At this stage the components are based on classes.
+
 ### To Run
 
 NPM RUN BUILD
