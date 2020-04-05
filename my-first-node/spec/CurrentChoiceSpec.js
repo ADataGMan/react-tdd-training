@@ -1,12 +1,16 @@
 import React from 'react';
 import TestUtils from 'react-dom/test-utils';
 import CurrentChoice from '../src/components/CurrentChoice.js';
+import TestWrapper from '../src/components/TestWrapper.js';
+
 
 describe('Current Choice', function () {
   var component;
   beforeEach(function () {
     component = TestUtils.renderIntoDocument(
-      <CurrentChoice checked="Answer 1" />
+      <TestWrapper>
+        <CurrentChoice checked="Answer 1" />
+      </TestWrapper>
     );
   });
 
